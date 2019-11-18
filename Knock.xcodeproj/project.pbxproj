@@ -10,6 +10,8 @@
 		4CC4743E2382A2CA0011B070 /* Knock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC474342382A2CA0011B070 /* Knock.framework */; };
 		4CC474432382A2CA0011B070 /* KnockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC474422382A2CA0011B070 /* KnockTests.swift */; };
 		4CC474452382A2CA0011B070 /* Knock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC474372382A2CA0011B070 /* Knock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC474502382A3260011B070 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4744E2382A3260011B070 /* TestViewController.swift */; };
+		4CC474512382A3260011B070 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4744F2382A3260011B070 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		4CC4743D2382A2CA0011B070 /* KnockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC474422382A2CA0011B070 /* KnockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockTests.swift; sourceTree = "<group>"; };
 		4CC474442382A2CA0011B070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC4744E2382A3260011B070 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		4CC4744F2382A3260011B070 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				4CC474372382A2CA0011B070 /* Knock.h */,
+				4CC4744E2382A3260011B070 /* TestViewController.swift */,
+				4CC4744F2382A3260011B070 /* TestViewController.xib */,
 				4CC474382382A2CA0011B070 /* Info.plist */,
 			);
 			path = Knock;
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					4CC474332382A2CA0011B070 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					4CC4743C2382A2CA0011B070 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC474512382A3260011B070 /* TestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC474502382A3260011B070 /* TestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		4CC474492382A2CA0011B070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coviam.Coviam.Knock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		4CC4744A2382A2CA0011B070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +398,7 @@
 		4CC4744C2382A2CA0011B070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KnockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +416,7 @@
 		4CC4744D2382A2CA0011B070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KnockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
